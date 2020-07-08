@@ -1,0 +1,54 @@
+#python homework 
+#Pybank
+
+#create file paths across any operating system
+import os
+
+#module for reading csv files
+import csv
+
+#create the path for csv files
+csvpath = os.path.join('..','resources','budget_data.csv')
+
+#open csv with read function
+
+with open(csvpath, 'r') as csvfile:
+	csvreader = csv.reader('csvfile', delimiter= ',')
+
+
+#create a list for months
+
+#create a list for profit/losses
+
+#create a function to calculate the sum of the total months
+
+import Counter
+
+
+#create a function to calculate the net total of profit/losses
+
+#create a function to calculate the average of changes in profit/losses
+
+#create a function to calculate the greatest increase in profits (date/amount)
+
+#create a function to calculate the greatest decrease in losses (date/amount)
+
+#print method into terminal and seperate text file
+	
+with open('csvpath', 'w') as new_csvfile:
+	
+	csvwriter = csv.writer(new_csvfile, delimiter=',')
+
+	csvwriter.writerow('Financial Analysis')
+	csvwriter.writerow(['Total months:', 'sum_months'])
+	csvwriter.writerow(['Total profit/losses:', 'sum_profit'])
+	csvwriter.writerow(['Average Change:', 'average'])
+	csvwriter.writerow(['Greatest Increase in Profits:', 'month','greatest_profit'])
+	csvwriter.writerow(['Greatest Decrease in Profits:', 'month','greatest_loss'])
+
+
+
+	#resources: https://www.geeksforgeeks.org/working-csv-files-python/
+	#https://stackoverflow.com/questions/25597477/python-calculate-average-for-every-column-in-a-csv-file
+	#https://www.youtube.com/watch?v=q5uM4VKywbA	
+	  
